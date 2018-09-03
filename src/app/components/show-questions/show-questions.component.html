@@ -1,0 +1,28 @@
+<div class="addQstns">
+  <div class="container">
+    <h3 class="text-center">Questions</h3>
+    <p class="selectCat">
+      <mat-form-field>
+        <mat-select  placeholder="Choose a Category First" [(ngModel)]="catShowSelect" (selectionChange)="categorySelected($event)">
+          <mat-option *ngFor="let cat of qstCatgeory" [value]="cat.code">{{cat.category}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </p>
+    <div *ngIf="catShowSelect" class="showQstns">
+      <table>
+        <span>{{errorMessage}}</span>
+        <tr *ngFor="let question of questions" class="questionBlog">
+          <td><strong>{{question.questions}}</strong></td>
+          <div class="optDiv">
+            <div *ngFor="let multiChoice of question.choices" class="options">
+              <label class="inptVal"> {{multiChoice}}
+                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

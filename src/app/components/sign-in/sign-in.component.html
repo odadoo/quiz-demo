@@ -1,0 +1,71 @@
+<!-- <div class="signIn">
+  <div class="mb_10">
+    <h3>Sign In</h3>
+  </div>
+  <div class="mb_10 inptDiv">
+    <form #logInForm = "ngForm" name="form" (ngSubmit)="onSubmit(); logInForm.reset()" class="example-form" novalidate>
+      <div class="mb_10 form-group emailInpt">
+        <input type="email" name="email" id="email" placeholder="Email" [(ngModel)]="logUser.email" #email="ngModel">
+      </div>
+      <div class="mb_10 form-group passInpt">
+        <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="logUser.password" #password="ngModel">
+      </div>
+      <div>
+        <button class="btn btn-primary" type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+  <div>
+    <button class="btn btn-info" (click)="OpenSignUpPopup()">SignUp</button>
+  </div>
+</div>
+ -->
+
+
+<div class="mid-div">
+  <table class="popup">
+    <div class="heading">
+      Sign-In
+    </div>
+    <div class="spacing">
+      <button type="button" class="btn fb" md-button>Continue with Facebook</button>
+      <button type="button" class="google">Continue with Google</button>
+    </div>
+    <div class="orconfig">
+      <div class="line-seperator-front"></div>
+      <div class="or">OR</div>
+      <div class="inner-orconfig line-separator-end"></div>
+    </div>
+
+    <div class="frm">
+      <form #logInForm = "ngForm" name="form" (ngSubmit)="onSubmit(); logInForm.reset()" class="example-form" novalidate>
+        <div class="mb_10 form-group inpt">
+          <span class="fa fa-envelope-o"></span>
+          <input class="inputtype" type="email" name="email" id="email" placeholder="Email" [(ngModel)]="logUser.email" #email="ngModel">
+        </div>
+        <div class="mb_10 form-group inpt">
+          <span class="fa fa-key"></span>
+          <input class="inputtype" type="password" name="password" id="password" placeholder="Password" [(ngModel)]="logUser.password" #password="ngModel">
+        </div>
+        <div class="spacing">
+          <button class="btn btn-success" type="submit">Login</button>
+          <button class="btn" type="button" routerLink="/">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      or<label class="forPass"> Forget Password</label>
+    </div>
+    <div class="policy">
+      By signing up, you agree to our Terms of Use and Privacy Policy.
+    </div>
+    <div class="second-line ">
+      <div class="line-seperator"></div>
+    </div>
+    <div class="account">
+      <div>Don't have an account?
+        <label class="forPass" (click)="OpenSignUpPopup()">Sign Up</label>
+      </div>
+    </div>
+  </table>
+</div>

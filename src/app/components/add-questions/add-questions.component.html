@@ -1,0 +1,59 @@
+<div class="addQstns">
+  <div class="container">
+    <h3 class="text-center">Add Questions</h3>
+   <!--  <p>
+      <select  class="form-control" (change)="filterForeCasts($event)">
+        <option value="0">Choose Category</option>
+        <option *ngFor="let summary of qstCatgeory" value={{summary.category}}>
+            {{summary.category}}
+        </option>
+      </select>
+    </p> -->
+    <div class="addForm">
+      <form #myForm="ngForm" name="form" (ngSubmit)="myForm.form.valid && onSubmit(); myForm.reset()" novalidate>
+        <p class="selectCat">
+          <mat-form-field>
+            <mat-select  placeholder="Choose a Category First" name="catSelect" [(ngModel)]="questionary.catSelect">  <!-- (selectionChange)="categorySelected($event)" -->
+              <mat-option *ngFor="let cat of qstCatgeory" [value]="cat.code">{{cat.category}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </p>
+        <div class="row" *ngIf="questionary.catSelect">
+          <div class="form-group col-sm-12">
+            <label for="addingQtn">Question</label>
+            <input type="text" class="form-control" name="question" id="question"
+              [(ngModel)]="questionary.question" #question="ngModel" placeholder="Enter question here.." required>
+          </div>
+
+          <div class="form-group col-sm-5 col-md-6">
+            <label>First Option (a.)</label>
+            <input type="text" class="form-control" name="option1" id="option1"
+              [(ngModel)]="questionary.option1" #option1="ngModel" placeholder="Your option here.." required><!--  [ngClass]="{ 'is-invalid': f.submitted && option1.invalid }" -->
+          </div>
+
+          <div class="form-group col-sm-5 col-md-6 col-md-offset-0">
+            <label>Second Option (b.)</label>
+            <input type="text" class="form-control" name="option2" id="option2"
+              [(ngModel)]="questionary.option2" #option2="ngModel" placeholder="Your option here.." required>
+          </div>
+
+          <div class="form-group col-sm-5 col-md-6">
+            <label>Third Option (c.)</label>
+            <input type="text" class="form-control" name="option3" id="option3"
+              [(ngModel)]="questionary.option3" #option3="ngModel" placeholder="Your option here.." required>
+          </div>
+
+          <div class="form-group col-sm-5 col-md-6 col-md-offset-0">
+            <label>Fourth Option (d.)</label>
+            <input type="text" class="form-control" name="option4" id="option4"
+              [(ngModel)]="questionary.option4" #option4="ngModel" placeholder="Your option here.." required>
+          </div>
+
+          <div class="addBtn">
+            <button class="btn btn-primary" type="submit" [disabled]="myForm.form.invalid">Add Question</button><!--  [disabled]="f.form.invalid" -->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.summSectn{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.tagLine{
+  color: #ffffff;
+  font-size: 28px;
+  padding: 275px 40px;
+  font-family: lato;
+  font-style: italic;
+}
+.contain{
+  background-image: url(/assets/images/photography-wallpaper-1.jpg);
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+  background-color: #999;
+  /*background-size: auto 100%;*/
+  background-repeat: no-repeat;
+}
+.qzImg {
+  width: 450px;
+  height: 270px;
+}
+.head{
+  margin-top: 50px;
+  width: 37vw;
+  margin-bottom: 50px;
+}
+.subHead{
+  margin-top: 20px;
+  color: black;
+  opacity: 0.5;
+}
+.guideLinks{
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+a{
+  flex-basis: 50%;
+  text-decoration: underline;
+}

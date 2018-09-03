@@ -1,0 +1,252 @@
+/*.signIn{
+  text-align: center;
+}
+
+.inptDiv{
+  display: grid;
+}
+
+.mb_10{
+  margin: 0px 15px 15px 15px
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid #C0C0C0;
+  width: 320px;
+  height: 50px;
+}
+input:focus{
+  outline: none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mid-div{
+}
+
+.popup{
+  background-color: #ffffff;
+  text-align: center;
+  font-family: lato;
+}
+
+.frm{
+  margin-top: 15px;
+}
+
+.heading{
+  /*color: black;*/
+  color: #686868;
+  height: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div label{
+  color: #008080;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+div label:hover{
+  color: #333333;
+}
+
+/*.fb{
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #003d99;
+  color: white;
+}
+
+.google{
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.cancel{
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #F0F0F0;
+  border: 1px solid #ccc;
+}*/
+
+.fb{
+  background-color: #003d99;
+  color: #ffffff;
+}
+
+.google{
+  background-color: white;
+  color: #686868;
+}
+
+.spacing{
+  padding: 5px;
+  display: inline-grid;
+}
+
+button{
+  height: 45px;
+  width: 330px;
+  box-shadow: 0px 1px 10px 1px #BEBEBE;
+
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+btn-primary :focus{
+  border: none;
+}
+
+.log{
+  font-size: 15px;
+  background-color: green;
+  border-radius: 3px;
+}
+
+.orconfig{
+  padding-left: 20px;
+  height: 2px;
+  padding-top: 5px;
+  padding-right: 20px;
+}
+
+.or{
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  padding-left: 5px;
+  width: 30px;
+  float: left;
+  margin-top: -5px;
+}
+
+.form-group{
+  margin-bottom: 0.5rem;
+}
+
+.line-seperator-front{
+  width:44%;
+  float: left;
+  height: 1px;
+  background: #ccc;
+}
+
+.inner-orconfig{
+  padding-left: 20px;
+  padding-left: 5px;
+}
+
+.line-separator-end{
+  float: right;
+  width:44%;
+  height: 1px;
+  background: #ccc;
+}
+
+
+.inputtype{
+  font-size: 15px;
+  color: black;
+  border: solid 1px #ccc;
+  padding:5px;
+  border-radius: 3px;
+  height: 40px;
+  width: 330px;
+}
+
+.forPass{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.policy{
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  width: 340px;
+    padding-left: 30px;
+}
+
+.account{
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.line-seperator{
+  height: 1px;
+  background: #ccc;
+}
+
+.imagee{
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+}
+
+.second-line{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.fa {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 15px;
+  color: #A9A9A9;
+}
+
+.inpt input{
+  text-indent: 30px;
+}
+
+.inpt{
+  position: relative;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+

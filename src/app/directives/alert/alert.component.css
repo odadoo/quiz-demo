@@ -1,0 +1,14 @@
+.alert{
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 14px;
+}
+.msg{
+  position: relative;
+}
+.close{
+  position: absolute;
+  top: 17px;
+  right: 35px;
+  color: #155724;
+}
